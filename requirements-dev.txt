@@ -1,0 +1,11 @@
+# TPMS Builder — development and test dependencies
+#
+# Only needed to run the test suite. The application itself needs nothing here.
+#
+#   pip install -r requirements.txt -r requirements-dev.txt
+#   python -m pytest tests -q
+#
+# Note: tests/test_smoke.py::test_step_round_trip is skipped unless the optional
+# STEP support from requirements-step.txt is also installed.
+
+pytest>=8.0

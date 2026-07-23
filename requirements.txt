@@ -1,0 +1,25 @@
+# TPMS Builder — core requirements
+#
+# Everything the application needs to run. Verified on Python 3.14.3, Windows.
+# Requires Python 3.10 or newer.
+#
+#   python -m venv .venv
+#   .venv\Scripts\python -m pip install -r requirements.txt
+#   .venv\Scripts\python run.py
+#
+# Two optional companion files:
+#   requirements-step.txt   STEP / IGES import (large — a full OpenCascade build)
+#   requirements-dev.txt    pytest, to run the test suite
+
+numpy>=2.0
+scipy>=1.13
+scikit-image>=0.24
+trimesh>=4.0
+PySide6>=6.6
+pyvista>=0.44
+pyvistaqt>=0.11
+
+# trimesh optional extras used by the mesh loader/exporter
+lxml>=5.0          # 3MF read/write
+networkx>=3.0      # mesh splitting / connectivity
+Pillow>=10.0       # texture-bearing OBJ files

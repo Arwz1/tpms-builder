@@ -1,0 +1,9 @@
+# TPMS Builder — optional STEP / IGES support
+#
+# This pulls in a full OpenCascade build (~400 MB installed). It is kept separate so
+# the application installs and runs without it; tpms/io/step_loader.py imports OCP
+# lazily and reports a clear message if it is missing.
+#
+#   pip install -r requirements.txt -r requirements-step.txt
+
+cadquery-ocp>=7.7

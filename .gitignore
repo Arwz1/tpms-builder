@@ -1,0 +1,58 @@
+# Virtual environment — never commit. With cadquery-ocp installed this is several
+# hundred MB of OpenCascade binaries, and it is fully reproducible from requirements.
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Local tooling config — machine-specific paths, not project source
+.claude/settings.local.json
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Generated geometry — output of the app, not source. These get large fast; a single
+# 256^3 lattice STL is over 100 MB.
+*.stl
+*.obj
+*.ply
+*.3mf
+*.off
+*.glb
+*.gltf
+*.step
+*.stp
+*.iges
+*.igs
+
+# Saved parameter sets and screenshots produced while using the app
+tpms-settings.json
+*.png
